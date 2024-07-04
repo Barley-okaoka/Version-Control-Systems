@@ -4,6 +4,11 @@
 int main(){
     int i;
     int heads=0;
+    char str[100];
+    printf("Who are you?\n");
+    scanf("%s", str);
+    printf("Hello, %s!\n",str);
+
     printf("Tossing a coin...\n");
     for(i=0;i<3;i++){
         printf("Round %d: ",i+1);
@@ -16,6 +21,5 @@ int main(){
         sleep(1);
     }
     printf("Heads: %d, Tails: %d\n",heads,3-heads);
-
     return 0;
 }
